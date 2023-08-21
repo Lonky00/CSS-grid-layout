@@ -1,0 +1,95 @@
+<!-- 
+display: grid;
+// Torna o elemento um grid container.
+
+display: inline-grid;
+// Torna o elemento um grid container
+ porém com comportamento inline.
+
+display: subgrid;
+// Para grids dentro de grids 
+(ainda não é suportado, porém você pode 
+normalmente colocar display: grid; no grid 
+dentro do grid que funciona).
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+<body>
+
+
+    <h1 class="menu">Menu</h1>
+    <section class="container-menu flex">
+        <a href="./index.html">Grid Container</a>
+        <a href="./grid-template-columns.html">Grid template columns</a>
+    </section>
+
+
+
+
+    <div>
+        <h1>display: block;</h1>
+        <section class="grid">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>display: grid;</h1>
+        <section class="grid">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template-columns: 200px 200px;</h1>
+        <section class="container grid grid-template-columns">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template-columns: 1fr 2fr 3fr;</h1>
+        <section class="container grid grid-template-columns-3">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+        </section>
+    </div>
+    
+
+    <div>
+        <h1>subgrid</h1>
+        <section class="container grid grid-template-columns-3">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item subgrid">
+                <div>5.1</div>
+                <div>5.2</div>
+                <div>5.3</div>
+            </div>
+            <div class="item">6</div>
+        </section>
+    </div>
+    
+</body>
+</html>
