@@ -1,0 +1,96 @@
+<!--
+grid-template-areas:
+"logo nav nav"
+"sidenav content advert"
+"sidenav footer footer";
+// Cria 3 colunas e 3 linhas. 
+[logo] ocupa a coluna 1, linha 1. 
+[nav] ocupa da coluna 2 a 3, linha 1.
+[sidenav] ocupa a coluna 1, da linha 2 a 3.
+[content] ocupa a coluna 2, linha 2.
+[advert] ocupa a coluna 3, linha 2. 
+[footer] ocupa da coluna 2 a 3, linha 3
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/grid-template-areas.css">
+</head>
+<body>
+
+    
+ <h1 class="menu">Menu</h1>
+    <section class="container-menu flex">
+        <a href="./index.html">Grid Container</a>
+        <a href="./grid-template-columns.html">Grid template columns</a>
+        <a href="./grid-template-rows.html">Grid template rows</a>
+        <a href="./grid-template-areas.html">Grid template areas</a>
+    </section>
+
+    <div>
+        <h1>grid-template-areas</h1>
+        <section class="grid grid-template-areas-1">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item content">content</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template-areas</h1>
+        <section class="grid grid-template-areas-2">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item content">content</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template-areas (mobile)</h1>
+        <section class="grid grid-template-areas-3">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item content">content</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template-areas (coluna e linha)</h1>
+        <section class="grid grid-template-areas-4">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item content">content</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template-areas (. para área vazia)</h1>
+        <section class="grid grid-template-areas-5">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item content">content</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </section>
+    </div>
+
+</body>
+</html>
