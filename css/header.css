@@ -23,6 +23,7 @@ a {
 .container-menu {
     max-width: 960px;
     display:flex;
+    flex-wrap: wrap;
     margin: 0 auto;
     border: 1px solid #ccc;
     justify-content: space-around;

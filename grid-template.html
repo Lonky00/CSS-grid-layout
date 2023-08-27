@@ -1,0 +1,59 @@
+<!--
+grid-template:
+"logo nav nav" 50px
+"sidenav content advert" 150px
+"sidenav footer footer" 100px
+/ 100px 1fr 50px;
+// A primeira linha com 50px, 
+segunda com 150px e terceira com 100px. 
+A primeira coluna com 100px, 
+a segunda 1fr e a terceira com 50px.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Container</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/grid-template.css">
+</head>
+<body>
+
+    
+  <h1 class="menu">Menu</h1>
+    <section class="container-menu flex">
+        <a href="./index.html">Grid Container</a>
+        <a href="./grid-template-columns.html">Grid template columns</a>
+        <a href="./grid-template-rows.html">Grid template rows</a>
+        <a href="./grid-template-areas.html">Grid template areas</a>
+        <a href="./grid-template.html">Grid template</a>
+    </section>
+
+    <div>
+        <h1>grid-template: 50px 1fr / 100px 1fr 100px</h1>
+        <section class="grid grid-template-1">
+            <div class="item">logo</div>
+            <div class="item">nav</div>
+            <div class="item">content</div>
+            <div class="item">sidenav</div>
+            <div class="item">advert</div>
+            <div class="item">footer</div>
+        </section>
+    </div>
+
+    <div>
+        <h1>grid-template ( areas, columns e rows )</h1>
+        <section class="grid grid-template-2">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item content">content</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
+        </section>
+    </div>
+
+</body>
+</html>
