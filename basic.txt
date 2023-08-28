@@ -9,10 +9,9 @@
     <title>Grid Container</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/grid-template-rows.css">
+    <link rel="stylesheet" href="./CSS/grid-gap.css">
 </head>
 <body>
-
     
   <h1 class="menu">Menu</h1>
     <section class="container-menu flex">
@@ -21,6 +20,7 @@
         <a href="./grid-template-rows.html">Grid template rows</a>
         <a href="./grid-template-areas.html">Grid template areas</a>
         <a href="./grid-template.html">Grid template</a>
+        <a href="./grid-gap.html">Grid gap</a>
     </section>
 
 </body>
