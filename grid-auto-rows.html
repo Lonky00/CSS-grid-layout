@@ -1,28 +1,28 @@
 <!--
-grid-template:
-"logo nav nav" 50px
-"sidenav content advert" 150px
-"sidenav footer footer" 100px
-/ 100px 1fr 50px;
-// A primeira linha com 50px, 
-segunda com 150px e terceira com 100px. 
-A primeira coluna com 100px, 
-a segunda 1fr e a terceira com 50px.
+grid-auto-flow: row
+// Automaticamente gera novas linhas.
+
+grid-auto-flow: column
+// Automaticamente gera novas colunas.
+
+grid-auto-flow: dense
+// Tenta posicionar o máximo dos elementos que 
+existirem nas primeiras partes do grid 
+(pode desorganizar o conteúdo).
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Template</title>
+    <title>Grid Auto Rows</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/grid-template.css">
+    <link rel="stylesheet" href="./CSS/grid-auto-rows.css">
 </head>
 <body>
-
     
-  <h1 class="menu">Menu</h1>
+   <h1 class="menu">Menu</h1>
     <section class="container-menu flex">
         <a href="./index.html">Grid Container</a>
         <a href="./grid-template-columns.html">Grid template columns</a>
@@ -33,31 +33,35 @@ a segunda 1fr e a terceira com 50px.
         <a href="./grid-auto-columns.html">Grid auto columns</a>
         <a href="./grid-auto-rows.html">Grid auto rows</a>
     </section>
-
-
     <div>
-        <h1>grid-template: 50px 1fr / 100px 1fr 100px</h1>
-        <section class="grid grid-template-1">
-            <div class="item">logo</div>
-            <div class="item">nav</div>
-            <div class="item">content</div>
-            <div class="item">sidenav</div>
-            <div class="item">advert</div>
-            <div class="item">footer</div>
+        <h1>grid-auto-rows: 100px;</h1>
+        <section class="grid grid-auto-rows-1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
         </section>
-    </div>
-
-    <div>
-        <h1>grid-template ( areas, columns e rows )</h1>
-        <section class="grid grid-template-2">
+        </div>
+        
+        
+        <div>
+        <h1>grid-auto-rows: 50px 100px;</h1>
+        <section class="grid grid-auto-rows-2">
             <div class="item logo">logo</div>
             <div class="item nav">nav</div>
             <div class="item content">content</div>
             <div class="item sidenav">sidenav</div>
             <div class="item advert">advert</div>
             <div class="item footer">footer</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
+            <div class="item">p</div>
         </section>
-    </div>
-
+        </div>
 </body>
-</html>
