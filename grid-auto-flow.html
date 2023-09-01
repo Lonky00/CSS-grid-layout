@@ -1,7 +1,16 @@
 <!--
-grid-auto-columns: 100px
-// As colunas implícitas, 
-geradas automaticamente, terão 100px de largura.
+
+   grid-auto-flow: row
+// Automaticamente gera novas linhas.
+
+grid-auto-flow: column
+// Automaticamente gera novas colunas.
+
+grid-auto-flow: dense
+// Tenta posicionar o máximo dos elementos 
+que existirem nas primeiras partes do grid 
+(pode desorganizar o conteúdo).
+
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -11,11 +20,11 @@ geradas automaticamente, terão 100px de largura.
     <title>Grid Auto Columns</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/grid-auto-columns.css">
+    <link rel="stylesheet" href="./CSS/grid-auto-flow.css">
 </head>
 <body>
     
-    <h1 class="menu">Menu</h1>
+   <h1 class="menu">Menu</h1>
     <section class="container-menu flex">
         <a href="./index.html">Grid Container</a>
         <a href="./grid-template-columns.html">Grid template columns</a>
@@ -29,41 +38,43 @@ geradas automaticamente, terão 100px de largura.
     </section>
 
 
-
     <div>
-        <h1>grid-auto-columns: 100px</h1>
-        <section class="grid grid-auto-columns-1">
+        <h1>grid-auto-flow: column;</h1>
+        <section class="grid grid-auto-flow-1">
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
             <div class="item">4</div>
             <div class="item">5</div>
-            <div class="item item-6">6</div>
         </section>
-    </div>
-
-    <div>
-        <h1>grid-auto-columns: 50px 100px</h1>
-        <section class="grid grid-auto-columns-2">
+        </div>
+        
+        <div>
+        <h1>grid-auto-flow: column;</h1>
+        <section class="grid grid-auto-flow-2">
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
             <div class="item">4</div>
             <div class="item">5</div>
-            <div class="item item-6">6</div>
         </section>
-    </div>
-
-    <div>
-        <h1>grid-auto-columns nao definido</h1>
-        <section class="grid grid-auto-columns-3">
+        </div>
+        
+        
+        <div>
+        <h1>grid-auto-flow: dense;</h1>
+        <section class="grid grid-auto-rows-2">
             <div class="item">1</div>
-            <div class="item">2</div>
+            <div class="item item-2">2</div>
             <div class="item">3</div>
-            <div class="item">4</div>
+            <div class="item item-4">4</div>
             <div class="item">5</div>
-            <div class="item item-6">6</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+            <div class="item">9</div>
         </section>
-    </div>
+        </div>
+        
 </body>
 </html>
