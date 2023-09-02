@@ -1,15 +1,14 @@
 <!--
 
-grid-auto-flow: row
-// Automaticamente gera novas linhas.
+grid: 100px / 1fr 1fr
+// Gera uma linha com 100px de altura e 2 colunas com 1fr.
 
-grid-auto-flow: column
-// Automaticamente gera novas colunas.
+grid: 100px / auto-flow 100px 50px
+// Gera uma linha com 100px de altura.
 
-grid-auto-flow: dense
-// Tenta posicionar o máximo dos elementos 
-que existirem nas primeiras partes do grid 
-(pode desorganizar o conteúdo).
+O grid-auto-flow é definido como column 
+(pois está logo antes da definição das colunas). 
+Ele também define o grid-auto-columns com 100px 50px
 
 -->
 <!DOCTYPE html>
@@ -17,14 +16,14 @@ que existirem nas primeiras partes do grid
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid Auto Columns</title>
+    <title>Grid</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/grid-auto-flow.css">
+    <link rel="stylesheet" href="./CSS/grid.css">
 </head>
 <body>
     
-  <h1 class="menu">Menu</h1>
+    <h1 class="menu">Menu</h1>
     <section class="container-menu flex">
         <a href="./index.html">Grid Container</a>
         <a href="./grid-template-columns.html">Grid template columns</a>
@@ -44,8 +43,8 @@ que existirem nas primeiras partes do grid
 
 
     <div>
-        <h1>grid-auto-flow: column;</h1>
-        <section class="grid grid-auto-flow-1">
+        <h1>grid: 100px / 1fr 1fr;</h1>
+        <section class="grid grid-1">
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
@@ -55,8 +54,8 @@ que existirem nas primeiras partes do grid
         </div>
         
         <div>
-        <h1>grid-auto-flow: column;</h1>
-        <section class="grid grid-auto-flow-2">
+        <h1>grid: 100px / auto-flow 100px 50px;</h1>
+        <section class="grid grid-2">
             <div class="item">1</div>
             <div class="item">2</div>
             <div class="item">3</div>
@@ -65,21 +64,16 @@ que existirem nas primeiras partes do grid
         </section>
         </div>
         
-        
         <div>
-        <h1>grid-auto-flow: dense;</h1>
-        <section class="grid grid-auto-rows-2">
-            <div class="item">1</div>
-            <div class="item item-2">2</div>
-            <div class="item">3</div>
-            <div class="item item-4">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-            <div class="item">8</div>
-            <div class="item">9</div>
+        <h1>grid diversos valores</h1>
+        <section class="grid grid-3">
+            <div class="item logo">logo</div>
+            <div class="item nav">nav</div>
+            <div class="item content">content</div>
+            <div class="item sidenav">sidenav</div>
+            <div class="item advert">advert</div>
+            <div class="item footer">footer</div>
         </section>
         </div>
-
 </body>
 </html>

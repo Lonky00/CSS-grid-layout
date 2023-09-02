@@ -1,0 +1,142 @@
+<!--
+
+justify-content: start
+// Justifica os itens ao início.
+
+justify-content: end
+// Justifica os itens ao final.
+
+justify-content: stretch
+// Estica os itens.
+
+justify-content: space-around
+// Distribui espaço entre os elementos. 
+(O início e final são menores que os espaços internos).
+
+justify-content: space-between
+// Cria um espaço entre os elementos, 
+ignorando o início e final.
+
+justify-content: space-evenly
+// Cria um espaço igual entre as colunas
+(no início e final também).
+
+justify-content: center
+// Centraliza o conteúdo.
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/justify-content.css">
+</head>
+<body>
+    
+    <h1 class="menu">Menu</h1>
+    <section class="container-menu flex">
+        <a href="./index.html">Grid Container</a>
+        <a href="./grid-template-columns.html">Grid template columns</a>
+        <a href="./grid-template-rows.html">Grid template rows</a>
+        <a href="./grid-template-areas.html">Grid template areas</a>
+        <a href="./grid-template.html">Grid template</a>
+        <a href="./grid-gap.html">Grid gap</a>
+        <a href="./grid-auto-columns.html">Grid auto columns</a>
+        <a href="./grid-auto-rows.html">Grid auto rows</a>
+        <a href="./grid-auto-flow.html">Grid auto flow</a>
+        <a href="./grid.html">Grid</a>
+        <a href="./justify-content.html">Justify content</a>
+        <a href="./align-content.html">Align content</a>
+        <a href="./justify-item.html">Justify item</a>
+        <a href="./align-itens.html">Align item</a>
+    </section>
+
+<div>
+<h1>justify-content: start;</h1>
+<section class="grid start">
+	<div class="item">1</div>
+	<div class="item item-2">2</div>
+	<div class="item item-3">3</div>
+	<div class="item">4</div>
+	<div class="item item-5">5</div>
+	<div class="item">6</div>
+</section>
+</div>
+
+<div>
+<h1>justify-content: end;</h1>
+<section class="grid end">
+	<div class="item">1</div>
+	<div class="item item-2">2</div>
+	<div class="item item-3">3</div>
+	<div class="item">4</div>
+	<div class="item item-5">5</div>
+	<div class="item">6</div>
+</section>
+</div>
+
+<div>
+<h1>justify-content: center;</h1>
+<section class="grid center">
+	<div class="item">1</div>
+	<div class="item item-2">2</div>
+	<div class="item item-3">3</div>
+	<div class="item">4</div>
+	<div class="item item-5">5</div>
+	<div class="item">6</div>
+</section>
+</div>
+
+<div>
+<h1>justify-content: stretch;</h1>
+<section class="grid stretch">
+	<div class="item">1</div>
+	<div class="item item-2">2</div>
+	<div class="item item-3">3</div>
+	<div class="item">4</div>
+	<div class="item item-5">5</div>
+	<div class="item">6</div>
+</section>
+</div>
+
+<div>
+<h1>justify-content: space-around;</h1>
+<section class="grid space-around">
+	<div class="item">1</div>
+	<div class="item item-2">2</div>
+	<div class="item item-3">3</div>
+	<div class="item">4</div>
+	<div class="item item-5">5</div>
+	<div class="item">6</div>
+</section>
+</div>
+
+<div>
+<h1>justify-content: space-between;</h1>
+<section class="grid space-between">
+	<div class="item">1</div>
+	<div class="item item-2">2</div>
+	<div class="item item-3">3</div>
+	<div class="item">4</div>
+	<div class="item item-5">5</div>
+	<div class="item">6</div>
+</section>
+</div>
+
+<div>
+<h1>justify-content: space-evenly;</h1>
+<section class="grid space-evenly">
+	<div class="item">1</div>
+	<div class="item item-2">2</div>
+	<div class="item item-3">3</div>
+	<div class="item">4</div>
+	<div class="item item-5">5</div>
+	<div class="item">6</div>
+</section>
+</div>
+</body>
+</html>
