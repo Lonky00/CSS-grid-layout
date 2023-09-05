@@ -1,24 +1,25 @@
 <!--
 
-grid-column: 1
-// O item ocupará a coluna 1.
+grid-row: 1
+// O item ocupará a linha 1.
 
-grid-column: 1 / 3
-// O item ocupará a coluna 1 e 2 
-(Sim, isso mesmo, 1 e 2,
- pois os valores 1 / 3 são referentes as linhas da coluna. 
- Isso significa que começa na linha 1 (início do grid) 
- e vai até a linha 3, que é o começo da terceira coluna).
+grid-row: 1 / 3
+// O item ocupará a linha 1 e 2 
+(Sim, isso mesmo, 1 e 2, 
+pois os valores 1 / 3 são referentes as linhas do grid. 
+Isso significa que começa na linha 1 (início do grid)
+e vai até a linha 3 do grid, que é o começo da terceira
+ linha).
 
-grid-column-start: 2
-// O item vai começar na linha 2.
+grid-row-start: 2
+// O item vai começar na linha do grid 2.
 
-grid-column-end: 4
-// O item vai terminar na linha 4.
+grid-row-end: 4
+// O item vai terminar na linha do grid 4.
 
-grid-column: span 2
-// O item irá ocupar duas colunas a partir 
-de onde ele estiver.
+grid-row: span 2
+// O item irá ocupar duas linhas a partir de onde 
+ele estiver.
 
 -->
 <!DOCTYPE html>
@@ -29,11 +30,12 @@ de onde ele estiver.
     <title>Grid Auto Columns</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/grid-column.css">
+    <link rel="stylesheet" href="./CSS/grid-row.css">
 </head>
 <body>
     
-        <h1 class="menu">Menu</h1>
+   
+    <h1 class="menu">Menu</h1>
     <section class="container-menu flex">
         <a href="./index.html">Grid Container</a>
         <a href="./grid-template-columns.html">Grid template columns</a>
@@ -55,8 +57,8 @@ de onde ele estiver.
     </section>
     
     <div>
-        <h1>grid-column</h1>
-        <section class="grid  grid-column-1">
+        <h1>grid-row</h1>
+        <section class="grid grid-row-1">
             <div class="item item-1">1</div>
             <div class="item item-2">2</div>
             <div class="item item-3">3</div>
@@ -65,10 +67,10 @@ de onde ele estiver.
             <div class="item item-6">6</div>
         </section>
     </div>
-
+    
     <div>
-        <h1>grid-column span</h1>
-        <section class="grid  grid-column-2">
+        <h1>grid-row span</h1>
+        <section class="grid grid-row-2">
             <div class="item item-1">1</div>
             <div class="item item-2">2</div>
             <div class="item item-3">3</div>
@@ -77,10 +79,10 @@ de onde ele estiver.
             <div class="item item-6">6</div>
         </section>
     </div>
-
+    
     <div>
-        <h1>grid-column-start / grid-column-end</h1>
-        <section class="grid  grid-column-3">
+        <h1>grid-row-start / grid-row-end</h1>
+        <section class="grid grid-row-3">
             <div class="item item-1">1</div>
             <div class="item item-2">2</div>
             <div class="item item-3">3</div>
@@ -89,12 +91,10 @@ de onde ele estiver.
             <div class="item item-6">6</div>
         </section>
     </div>
-
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64626/grid-column.png" alt="Grid Columns">
-
+    
     <div>
-        <h1>[col1-inicio]</h1>
-        <section class="grid  grid-column-4">
+        <h1>[row1]</h1>
+        <section class="grid grid-row-4">
             <div class="item item-1">1</div>
             <div class="item item-2">2</div>
             <div class="item item-3">3</div>
@@ -103,10 +103,10 @@ de onde ele estiver.
             <div class="item item-6">6</div>
         </section>
     </div>
-
+    
     <div>
-        <h1>grid-template-areas</h1>
-        <section class="grid  grid-column-5">
+        <h1>grid-templte-areas</h1>
+        <section class="grid grid-row-5">
             <div class="item item-1">1</div>
             <div class="item item-2">2</div>
             <div class="item item-3">3</div>
@@ -115,19 +115,6 @@ de onde ele estiver.
             <div class="item item-6">6</div>
         </section>
     </div>
-
-    <div>
-        <h1>grid-column normal</h1>
-        <section class="grid  grid-column-6">
-            <div class="item item-1">1</div>
-            <div class="item item-2">2</div>
-            <div class="item item-3">3</div>
-            <div class="item item-4">4</div>
-            <div class="item item-5">5</div>
-            <div class="item item-6">6</div>
-        </section>
-    </div>
-
 
 </body>
 </html>
